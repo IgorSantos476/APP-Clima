@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-image: url('./background_img/6460a38a-6c11-4ec9-b986-2ee39740d06c.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+
+    /* INPUT ERROR MESSAGE */
+
+#message_err {
+    z-index: 1;
+}
+
+#input_empty, #input_invalid {
+    display: none;
+}
+
+    /* ***************************** */
+
+
+.content {
+    width: 60%;
+    min-height: 85vh;
+    background: linear-gradient(rgb(174, 191, 196), rgb(126, 191, 216));
+    border-radius: 12px;
+    opacity: 0.9;
+    padding: 5px 10px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+input {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 90%;
+    background-color: rgb(138, 157, 165);
+    color: white;
+}
+
+input:hover {
+    box-shadow: 1px 1px 5px black;
+    transition: all 0.3s;
+}
+
+button {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    background-color: rgb(138, 157, 165);
+    color: white;
+}
+
+.city_content {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+    height: 15%;
+}
+
+.city_content {
+    font-size: 1.6em;
+}
+
+.climate_weather {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+}
+
+#icon_climate img {
+    width: 180px;
+    height: 180px;
+}
+
+#temperature span {
+    font-size: 3.5em;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+#temperature p {
+    font-size: 18px;
+}
+
+
+.test {
+    width: 80%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.test i {
+    font-size: 3em;
+}
+
+.test li {
+    text-align: center;
+    font-size: 20px;
+}
+
+.information {
+    display: flex;
+    justify-content: center;
+    height: 25%;
+}
+
+.forecasts ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+.forecasts li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(101, 118, 126);
+    opacity: 0.5;
+    width: 20%;
+    height: 16vh;
+    border-radius: 12px;
+    color: white;
+}
+
+    /* ************************************ */
+
+#content_son {
+    display: none;
+}
+
+#not_found {
+    height: 85%;
+}
+
+.content_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    padding-top: 200px;
+}
+
+.content_2 span {
+    font-size: 15em;
+    color: rgb(47, 112, 138);
+}
+
+.content_3 {
+    height: 50%;
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(39, 100, 124);
+    padding-top: 100px;
+}
+
+
+
+
+    /**************** MEDIA SCREEN *****************/
+
+@media(max-width: 766px) {
+    .city_content {
+        flex-direction: column;
+    }
+}
+
+    /* WIDTH: 991 PX */
+@media(max-width: 991px) {
+    .climate_weather {
+        flex-direction: column;
+    }
+
+    #temperature {
+        text-align: center;
+    }
+
+    #temperature span {
+        font-size: 2em;
+    }
+
+    #icon_climate img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .test i {
+        font-size: 2em;
+    }
+    
+    .test li {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .information {
+        height: 21%;
+    }
+
+    .forecasts li {
+        height: 12vh;
+    }
+
+    .forecasts li h3 {
+        font-size: 1em;
+    }
+
+    #magnifying {
+        font-size: 8em;
+    }
+
+    .content_3 {
+        font-size: 25px;
+    }
+
+    #air {
+        font-size: 11px;
+    }
+}
+
+    /* WIDTH: 1197 PX */
+@media(max-width: 1197px) {
+    .climate_weather {
+        width: 100%;
+    }
+}
+
+    /* WIDTH: 1536 PX */
+@media(max-width: 1536px) {
+    .content {
+        height: 95vh;
+    }
+
+    .forecasts li h3 {
+        font-size: 1.1em;
+    }
+
+    .forecasts li h2 {
+        font-size: 1.4em;
+    }
+}
+
+
+    /* WIDTH: 1280 PX */
+@media(max-width: 1280px) {
+    #magnifying {
+        font-size: 8em;
+    }
+
+    .content_3 {
+        font-size: 2em;
+    }
+}
+
+@media(max-width: 1366px) {
+
+    .city_content {
+        margin-bottom: -90px;
+    }
+    .test {
+        margin-top: -20px;
+    }
+
+    .forecasts li{
+        height: 20vh;
+    }
+}
