@@ -125,4 +125,3 @@ btn.addEventListener('click', el => {
 let width = window.innerWidth;
 
 console.log(`${width}px`);
-console.log(process.env.TEST);
